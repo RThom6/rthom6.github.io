@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <div>
+    <div className="pt-10">
         <div className="h-screen w-full dark:bg-black bg-white flex items-center justify-center relative">
         <HeroHighlight containerClassName='w-screen'>
           <div className="flex justify-center z-10">
