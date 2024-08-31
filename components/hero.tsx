@@ -11,13 +11,13 @@ const Hero = () => {
         <div className="h-screen w-full dark:bg-black bg-white flex items-center justify-center relative">
         <HeroHighlight containerClassName='w-screen'>
           <div className="flex justify-center z-10">
-            <div className='md:max-w-2xl flex flex-col items-center justify-center'>
+            <div className='md:max-w-4xl flex flex-col items-center justify-center'>
               <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                 Welcome to my portfolio
               </h2>
 
               <TextGenerateEffect
-                className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                className="text-center md:text-5xl lg:text-6xl"
                 words="Hi, I'm Ryan, an aspiring Software Developer based in the UK"
               />
 
