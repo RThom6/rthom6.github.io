@@ -3,7 +3,7 @@ import React from 'react'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import { HeroHighlight } from './ui/hero-highlight'
 import LitBorderButton from './ui/lit-border-button'
-import { FaLocationArrow } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -16,15 +16,21 @@ const Hero = () => {
           <div className="flex justify-center relative my-20 z-10">
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
               <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                Finally making one?!
+                Welcome to my portfolio
               </h2>
 
               <TextGenerateEffect
                 className="text-center text-[40px] md:text-5xl lg:text-6xl"
-                words="Portfolio Party Time"
+                words="Hi, I'm Ryan, an aspiring Software Developer based in the UK"
               />
-              <p>
-                Hi, I'm Ryan, an API Developer based in the UK
+
+              <p className="flex items-center justify-center gap-2">
+                <a href="https://github.com/rthom6" className="flex items-center justify-center gap-1">
+                  <FaGithub/>github
+                </a>
+                <a href="https://www.linkedin.com/in/rythom6/" className="flex items-center justify-center gap-1">
+                  <FaLinkedin/>linkedin
+                </a>
               </p>
 
               <a href="#projects">
