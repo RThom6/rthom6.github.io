@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin, FaLocationArrow } from 'react-icons/fa'
 const Hero = () => {
   return (
     <div>
-        <div className="min-h-screen w-full dark:bg-black bg-white flex items-center justify-center relative">
+        <div className="h-screen w-full pt-16 dark:bg-black bg-white flex items-center justify-center relative">
         <HeroHighlight containerClassName='w-screen'>
           <div className="flex justify-center z-10">
             <div className='md:max-w-4xl flex flex-col items-center justify-center'>
@@ -17,7 +17,7 @@ const Hero = () => {
               </h2>
 
               <TextGenerateEffect
-                className="text-center md:text-5xl lg:text-6xl xl:text-10xl"
+                className="text-center md:text-5xl lg:text-6xl"
                 words="Hi, I'm Ryan, an aspiring Software Developer based in the UK"
               />
 
