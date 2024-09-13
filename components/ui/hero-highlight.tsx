@@ -7,10 +7,12 @@ export const HeroHighlight = ({
   children,
   className,
   containerClassName,
+  style, // Add style prop here
 }: {
   children: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  style?: React.CSSProperties; // Define the style prop type
 }) => {
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
@@ -26,13 +28,15 @@ export const HeroHighlight = ({
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
   }
+
   return (
     <div
       className={cn(
         "relative h-1080 h-1280 flex items-center bg-white dark:bg-black justify-center group",
-        containerClassName
+        containerClassName,
       )}
       onMouseMove={handleMouseMove}
+      style={style} // Pass the style prop to the div
     >
       <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
       <motion.div
@@ -57,40 +61,5 @@ export const HeroHighlight = ({
 
       <div className={cn("relative z-20", className)}>{children}</div>
     </div>
-  );
-};
-
-export const Highlight = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <motion.span
-      initial={{
-        backgroundSize: "0% 100%",
-      }}
-      animate={{
-        backgroundSize: "100% 100%",
-      }}
-      transition={{
-        duration: 2,
-        ease: "linear",
-        delay: 0.5,
-      }}
-      style={{
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "left center",
-        display: "inline",
-      }}
-      className={cn(
-        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500`,
-        className
-      )}
-    >
-      {children}
-    </motion.span>
   );
 };
