@@ -23,6 +23,8 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1536px",
+        'h-1080': { 'raw': '(min-height: 1080px)' }, // Matches screens with height >= 1080px
+        'h-1280': { 'raw': '(min-height: 1280px)' },
       },
     },
     extend: {
