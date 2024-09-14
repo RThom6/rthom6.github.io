@@ -35,46 +35,58 @@ export const projects = [
 
 export const someInfo = [
     {
-        title: "Stripe",
+        title: "Passionate Learner",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "I\'m always eager to learn and solve complex technical problems. Whether it\’s mastering a new programming language or exploring new technology, I love diving deep and expanding my skillset.",
+        link: "#",
     },
     {
-        title: "Stripe",
+        title: "Collaborative Problem Solver",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "I thrive when working with others. Sharing ideas and solving problems as a team is something I enjoy, as it allows me to see perspectives I might not have thought of.",
+        link: "#",
     },
     {
-        title: "Stripe",
+        title: "Disciplined Athlete",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "I've competed in athletics, participating in events like shot putt and high jump. Now I work out regularly, which has taught me goal-setting and self-discipline that I apply to every part of my life.",
+        link: "#",
     },
     {
-        title: "Stripe",
+        title: "Love for Games",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "Gaming is a big part of who I am. Whether it's strategy games or competitive shooters, I love honing my skills and coordinating with teammates to achieve success.",
+        link: "#",
     },
     {
-        title: "Stripe",
+        title: "Bilingual Communicator",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "Fluent in both Welsh and English, I have strong interpersonal skills and enjoy connecting with people through clear and effective communication.",
+        link: "#",
     },
     {
-        title: "Stripe",
+        title: "MSc Computer Science Student",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "Currently completing my MSc in Computer Science at Lancaster University, where I’ve been developing my passion for technology and innovation.",
+        link: "#",
     },
     {
-        title: "Stripe",
+        title: "Creative Problem-Solver",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+            "I love finding creative solutions to technical problems and always aim to think outside the box. My experience with programming has taught me how to approach challenges from multiple angles.",
+        link: "#",
+    },
+    {
+        title: "Mentor and Guide",
+        description:
+            "I take pride in helping others learn and grow. Whether it's through teaching assistant roles or supporting my peers, I enjoy guiding people and sharing knowledge.",
+        link: "#",
+    },
+    {
+        title: "Driven by Curiosity",
+        description:
+            "Curiosity fuels everything I do. From exploring new technologies to diving into personal projects, I am always driven to discover how things work and how I can make them better.",
+        link: "#",
     },
 ]
 
