@@ -33,6 +33,54 @@ export const projects = [
     },
 ];
 
+export const skills = [
+    {
+        title: "Java"
+    },
+    {
+        title: "C"
+    },
+    {
+        title: "Embedded C"
+    },
+    {
+        title: "Typescript"
+    },
+    {
+        title: "Python"
+    },
+    {
+        title: "AWS"
+    },
+    {
+        title: "Azure DevOps"
+    },
+    {
+        title: "Node.js"
+    },
+    {
+        title: "Next.js"
+    },
+    {
+        title: "Git"
+    },
+    {
+        title: "React"
+    },
+    {
+        title: "Spigot/Bukkit"
+    },
+    {
+        title: "MATLAB"
+    },
+    {
+        title: "Linux development"
+    },
+    {
+        title: "PowerAutomate"
+    },
+]
+
 export const someInfo = [
     {
         title: "Passionate Learner",
