@@ -1,8 +1,10 @@
 "use client";
 
+import Education from "@/components/education";
 import Grid from "@/components/grid";
 import Hero from "@/components/hero";
 import RecentProjects from "@/components/recent-projects";
+import Skills from "@/components/skills";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
@@ -16,7 +18,9 @@ export default function Home() {
         />
         <Hero />
         <Grid />
+        <Skills />
         <RecentProjects />
+        <Education />
       </div>
     </main>
   );

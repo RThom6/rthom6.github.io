@@ -42,7 +42,7 @@ const Hero = () => {
 
             <a href="#projects">
               <LitBorderButton
-                title="Show my work"
+                title="Me and my work"
                 icon={<FaLocationArrow />}
                 position="right"
               />
