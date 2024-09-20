@@ -1,36 +1,16 @@
-export const projects = [
+export const recentProjects = [
     {
-        id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "/ui.earth.com",
+        title: "tello-rust",
+        description: "Tello-rust was my first small to medium sized project in Rust. It is a wrapper for controlling a DJITello drone using the Ryze Tello sdk. The library works as a wrapper for this SDK and works over a UDP port. The aim of it was to translate DJITelloPy from Python to Rust as a way of learning a bit about a new language. I uploaded version 1.0 of the library to crates.io (the rust community's crate registry) on the 14th of September 2024 and by the 19th it had garnered over 350 downloads.",
+        description2: "Creating this Rust library to interact with the Tello drone has taught me several important concepts. I've gained a deeper understanding of Rust's ownership and borrowing model, particularly when using Arc and Mutex to safely share state across threads. I've also become more proficient in handling errors and optional values through Rust's Result and Option types. Additionally, managing state using HashMap and custom enums like StateValue has helped me appreciate Rust's ability to build safe, performant, and reliable systems.",
+        imageUrl: "/resources/tell-rust.png"
     },
     {
-        id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-        link: "/ui.yoom.com",
-    },
-    {
-        id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        link: "/ui.aiimg.com",
-    },
-    {
-        id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: "/p4.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "/ui.apple.com",
-    },
+        title: "Portfolio Webstie",
+        description: "My portfolio is the first website I'd worked on. It was built using Next.js, FlutterFlow, ChakraUI and was written in Typescript. It taught me to design my own page and how to style so that a site may look good on small, medium or large devices.",
+        description2: "The point of this portfolio page is to provide more information about myself and allow me to display some projects that I am proud of in a little more detail. If you're reading this and you have any feedback you might want to give, please feel free to contact me as I am always looking to improve.",
+        imageUrl: "/resources/portfolio.png"
+    }
 ];
 
 export const skills = [

@@ -8,8 +8,8 @@ const Skills = () => {
       <h1 className="heading text-center mb-12 relative mx-auto">
         Skills
       </h1>
-      <div className="mt-20">
-        <BentoGrid className="mx-auto w-screen">
+      <div className="mt-10">
+        <BentoGrid className="mx-auto">
           {skills.map((item, i) => (
             <BentoGridItem
               key={i}
