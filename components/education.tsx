@@ -32,7 +32,7 @@ const Education = () => {
               <h2 className="text-lg font-bold">Junior API Developer</h2>
               <p className="mt-1 text-sm text-gray-300">
                 Lancaster University ITPI <br />
-                Working on a number of applications for numerous departments and researchers at the University of Lancaster. Aiding in development of applications in React and Typescript and AWS. Worked in an agile environment, making use of Git and Azure DevOps to continually improve applications. <br />
+                Working on a number of applications for numerous departments and researchers at the University of Lancaster. Aiding in development and debugging of both front and back-end applications in React, Typescript and AWS. Worked in an agile environment with stand ups every morning, making use of Git and Azure DevOps to continually improve applications. <br />
                 <strong>Aug 2024 – Present</strong>
               </p>
             </div>
