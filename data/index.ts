@@ -10,6 +10,12 @@ export const recentProjects = [
         description: "My portfolio is the first website I'd worked on. It was built using Next.js, FlutterFlow, ChakraUI and was written in Typescript. It taught me to design my own page and how to style so that a site may look good on small, medium or large devices.",
         description2: "The point of this portfolio page is to provide more information about myself and allow me to display some projects that I am proud of in a little more detail. If you're reading this and you have any feedback you might want to give, please feel free to contact me as I am always looking to improve.",
         imageUrl: "/resources/portfolio.png"
+    },
+    {
+        title: "Beesprite",
+        description: "Beesprite is a pixel painter application I collaborated on in my second year of University. Each group had to draft up a design report and a timeline which we could then use as a basis for our projects. I took a leading role in organising the tasks and deadlines for every member of the group and we managed to turn in a successfully completed project with expected functionality including undo/redo, import/export feature for a couple of different image types and fully customisable theme colours.",
+        description2: "Working on this project taught me good leadership and communication. It also helped build good version control practises where we would work on each new feature as its own feature branch, and then peer review eachothers code before accepting any pull request. This project also gave me the chance to improve my Java programming. If I were to remake this project, one thing I would definitely change is our codebase. As we were fairly new to semi large Java programs, our directory management was not ideal.",
+        imageUrl: "/resources/beesprite2.png"
     }
 ];
 
