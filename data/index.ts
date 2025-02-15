@@ -6,7 +6,7 @@ export const recentProjects = [
         imageUrl: "/resources/tell-rust.png"
     },
     {
-        title: "Portfolio Webstie",
+        title: "Portfolio Website",
         description: "My portfolio is the first website I'd worked on. It was built using Next.js, FlutterFlow, ChakraUI and was written in Typescript. It taught me to design my own page and how to style so that a site may look good on small, medium or large devices.",
         description2: "The point of this portfolio page is to provide more information about myself and allow me to display some projects that I am proud of in a little more detail. If you're reading this and you have any feedback you might want to give, please feel free to contact me as I am always looking to improve.",
         imageUrl: "/resources/portfolio.png"
