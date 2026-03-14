@@ -1,13 +1,11 @@
-import { Spotlight } from "@/Spotlight";
-import React from "react";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import React, { forwardRef } from "react";
 import { HeroHighlight } from "./ui/hero-highlight";
 import LitBorderButton from "./ui/lit-border-button";
 import { FaGithub, FaLinkedin, FaLocationArrow } from "react-icons/fa";
 
-const Hero = () => {
+const Hero = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div>
+    <div ref={ref}>
       <HeroHighlight
         containerClassName="w-full topAndBottomMargin dark:bg-black bg-white flex items-center justify-center relative"
         style={{ height: "calc(100vh - 80px)" }}
@@ -18,10 +16,11 @@ const Hero = () => {
               Welcome to my portfolio
             </h2>
 
-            <TextGenerateEffect
-              className="text-center md:text-5xl lg:text-6xl"
-              words="Hi, I'm Ryan, an aspiring Software Developer based in the UK"
-            />
+            <div className="font-bold text-center md:text-5xl lg:text-6xl">
+              <span className="text-white">Hi I'm Ryan, a </span>
+              <span className="text-purple">Full Stack Software Developer</span>
+              <span className="text-white">based in Manchester</span>
+            </div>
 
             <p className="flex items-center justify-center gap-2">
               <a
@@ -42,7 +41,7 @@ const Hero = () => {
 
             <a href="#projects">
               <LitBorderButton
-                title="Me and my work"
+                title="Read More"
                 icon={<FaLocationArrow />}
                 position="right"
               />
@@ -52,6 +51,7 @@ const Hero = () => {
       </HeroHighlight>
     </div>
   );
-};
+});
 
+Hero.displayName = "Hero";
 export default Hero;
