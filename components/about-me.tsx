@@ -1,7 +1,6 @@
 import React from "react";
 import { someInfo } from "@/data";
 import { HoverEffect } from "./ui/card-hover";
-import { BackgroundBeamsWithCollision } from "./ui/background-beams";
 
 const Grid = () => {
   return (

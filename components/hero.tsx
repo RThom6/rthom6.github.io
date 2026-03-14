@@ -17,7 +17,7 @@ const Hero = forwardRef<HTMLDivElement>((props, ref) => {
             </h2>
 
             <div className="font-bold text-center md:text-5xl lg:text-6xl">
-              <span className="text-white">Hi I'm Ryan, a </span>
+              <span className="text-white">Hi I&apos;m Ryan, a </span>
               <span className="text-purple">Full Stack Software Developer</span>
               <span className="text-white">based in Manchester</span>
             </div>
