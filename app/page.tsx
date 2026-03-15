@@ -1,6 +1,6 @@
 "use client";
 
-import Education from "@/components/education";
+import Experience from "@/components/experience";
 import Grid from "@/components/about-me";
 import Hero from "@/components/hero";
 import RecentProjects from "@/components/recent-projects";
@@ -46,7 +46,7 @@ export default function Home() {
           <Grid />
           <Skills />
           <RecentProjects />
-          <Education />
+          <Experience />
         </ChakraProvider>
       </div>
     </main>

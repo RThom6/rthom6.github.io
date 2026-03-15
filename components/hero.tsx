@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import { HeroHighlight } from "./ui/hero-highlight";
-import LitBorderButton from "./ui/lit-border-button";
 import { FaGithub, FaLinkedin, FaLocationArrow } from "react-icons/fa";
+import IconButton from "./ui/icon-button";
 
 const Hero = forwardRef<HTMLDivElement>((props, ref) => {
   return (
@@ -18,7 +18,9 @@ const Hero = forwardRef<HTMLDivElement>((props, ref) => {
 
             <div className="font-bold text-center md:text-5xl lg:text-6xl">
               <span className="text-white">Hi I&apos;m Ryan, a </span>
-              <span className="text-purple">Full Stack Software Developer</span>
+              <span className="text-purple">
+                Full Stack Software Developer{" "}
+              </span>
               <span className="text-white">based in Manchester</span>
             </div>
 
@@ -40,7 +42,7 @@ const Hero = forwardRef<HTMLDivElement>((props, ref) => {
             </p>
 
             <a href="#projects">
-              <LitBorderButton
+              <IconButton
                 title="Read More"
                 icon={<FaLocationArrow />}
                 position="right"

@@ -1,9 +1,8 @@
 import React from "react";
 
-const LitBorderButton = ({
+const IconButton = ({
   title,
   icon,
-  position,
   handleClick,
   otherClasses,
 }: {
@@ -16,7 +15,7 @@ const LitBorderButton = ({
   return (
     <button
       onClick={handleClick}
-      className={`p-[3px] relative w-full md:w-50 md:mt-6 ${otherClasses}`}
+      className={`p-[3px] relative mt-6 ${otherClasses}`}
     >
       <div className="absolute bg-purple inset-0 rounded-lg" />
       <div
@@ -24,12 +23,11 @@ const LitBorderButton = ({
           "px-10 py-2 bg-black rounded-lg relative group transition duration-200 text-white hover:bg-transparent flex items-center justify-center gap-2"
         }
       >
-        {position === "left" && icon}
         {title}
-        {position === "right" && icon}
+        {icon}
       </div>
     </button>
   );
 };
 
-export default LitBorderButton;
+export default IconButton;
