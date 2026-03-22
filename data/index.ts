@@ -8,14 +8,6 @@ export const recentProjects = [
         imageUrl: "/resources/tell-rust.png",
     },
     {
-        title: "Portfolio Website",
-        description:
-            "My portfolio is the first website I'd worked on. It was built using Next.js, FlutterFlow, ChakraUI and was written in Typescript. It taught me to design my own page and how to style so that a site may look good on small, medium or large devices.",
-        description2:
-            "The point of this portfolio page is to provide more information about myself and allow me to display some projects that I am proud of in a little more detail. If you're reading this and you have any feedback you might want to give, please feel free to contact me as I am always looking to improve.",
-        imageUrl: "/resources/portfolio.png",
-    },
-    {
         title: "Beesprite",
         description:
             "Beesprite is a pixel painter application I collaborated on in my second year of University. Each group had to draft up a design report and a timeline which we could then use as a basis for our projects. I took a leading role in organising the tasks and deadlines for every member of the group and we managed to turn in a successfully completed project with expected functionality including undo/redo, import/export feature for a couple of different image types and fully customisable theme colours.",
@@ -30,10 +22,10 @@ export const skills = [
         title: "Java",
     },
     {
-        title: "C",
+        title: "C#",
     },
     {
-        title: "Embedded C",
+        title: "C",
     },
     {
         title: "Typescript",
@@ -48,16 +40,16 @@ export const skills = [
         title: "Azure DevOps",
     },
     {
-        title: "Node.js",
+        title: "React",
     },
     {
-        title: "Next.js",
+        title: ".Net Core",
     },
     {
         title: "Git",
     },
     {
-        title: "React",
+        title: "SQL Server",
     },
     {
         title: "Spigot/Bukkit",
@@ -69,7 +61,7 @@ export const skills = [
         title: "Linux development",
     },
     {
-        title: "PowerAutomate",
+        title: "Playwright",
     },
 ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { education, workExperience } from "@/data";
 import { BriefcaseIcon } from "@heroicons/react/24/outline";
+import { AcademicCapIcon } from "@heroicons/react/24/outline";
 
 const Experience = () => {
   return (
@@ -23,9 +24,9 @@ const Experience = () => {
                   <p className="mt-1 text-gray-300">
                     {item.description}
                     <br />
-                    <div className="mt-2">
+                    <span className="mt-2">
                       <strong></strong>
-                    </div>
+                    </span>
                   </p>
                 </div>
               </div>
@@ -35,7 +36,7 @@ const Experience = () => {
             <>
               <div key={i} className="flex items-start gap-4">
                 <span className="hidden sm:block shrink-0 rounded-lg bg-gray-800 p-4">
-                  <BriefcaseIcon className="h-5 w-5 text-white" />
+                  <AcademicCapIcon className="h-5 w-5 text-white" />
                 </span>
                 <div>
                   <h2 className="text-lg font-bold">{item.school}</h2>
