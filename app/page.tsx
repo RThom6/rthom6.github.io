@@ -34,13 +34,24 @@ export default function Home() {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <main className="bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 text-white">
       <div className="w-full">
         <ChakraProvider>
           <FloatingNav
             visible={passedHero}
-            navItems={[{ name: "Back to Top", link: "/", icon: <FaHome /> }]}
+            navItems={[
+              {
+                name: "Back to Top",
+                link: "#",
+                icon: <FaHome />,
+                onClick: scrollToTop,
+              },
+            ]}
           />
           <Hero ref={heroRef} />
           <Grid />
