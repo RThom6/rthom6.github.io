@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Image, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react';
 
 type ProjectSectionProps = {
   title: string;
@@ -8,13 +8,9 @@ type ProjectSectionProps = {
 };
 
 export const ProjectSection = ({ title, description, imageUrl, description2 }: ProjectSectionProps) => {
-  const flexDirection = useBreakpointValue<'row' | 'column'>({ base: 'column', md: 'row' });
-  const titleOrder = useBreakpointValue({ base: 0, md: 1 });
-  const imageOrder = useBreakpointValue({ base: 1, md: 0 });
-
   return (
     <Flex
-      flexDirection={flexDirection}
+      flexDirection={{ base: 'column', md: 'row' }}
       alignItems="center"
       justifyContent="center"
       gap="6"
@@ -25,7 +21,7 @@ export const ProjectSection = ({ title, description, imageUrl, description2 }: P
       maxW="1920px"
       mx="auto"
     >
-      <Box flex="1" textAlign="left" order={titleOrder}>
+      <Box flex="1" textAlign="left" order={{ base: 0, md: 1 }}>
         <Heading as="h2" size="xl" mb="4" color="purple.400">
           {title}
         </Heading>
@@ -36,12 +32,12 @@ export const ProjectSection = ({ title, description, imageUrl, description2 }: P
         </Text>
       </Box>
 
-      <Box flex="1" order={imageOrder}>
+      <Box flex="1" order={{ base: 1, md: 0 }}>
         <Image
           src={imageUrl}
           alt={title}
           borderRadius="md"
-          boxSize={useBreakpointValue({ base: '100%', md: '100%' })}
+          boxSize="100%"
           objectFit="cover"
         />
       </Box>

@@ -7,7 +7,6 @@ import RecentProjects from "@/components/recent-projects";
 import Skills from "@/components/skills";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FaHome } from "react-icons/fa";
-import { ChakraProvider } from "@chakra-ui/react";
 import { useRef, useState, useEffect } from "react";
 
 export default function Home() {
@@ -41,24 +40,22 @@ export default function Home() {
   return (
     <main className="bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 text-white">
       <div className="w-full">
-        <ChakraProvider>
-          <FloatingNav
-            visible={passedHero}
-            navItems={[
-              {
-                name: "Back to Top",
-                link: "#",
-                icon: <FaHome />,
-                onClick: scrollToTop,
-              },
-            ]}
-          />
-          <Hero ref={heroRef} />
-          <Grid />
-          <Skills />
-          <RecentProjects />
-          <Experience />
-        </ChakraProvider>
+        <FloatingNav
+          visible={passedHero}
+          navItems={[
+            {
+              name: "Back to Top",
+              link: "#",
+              icon: <FaHome />,
+              onClick: scrollToTop,
+            },
+          ]}
+        />
+        <Hero ref={heroRef} />
+        <Grid />
+        <Skills />
+        <RecentProjects />
+        <Experience />
       </div>
     </main>
   );

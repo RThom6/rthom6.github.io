@@ -1,7 +1,7 @@
-import React from "react";
 import { education, workExperience } from "@/data";
 import { BriefcaseIcon } from "@heroicons/react/24/outline";
 import { AcademicCapIcon } from "@heroicons/react/24/outline";
+import { Badge, Stack } from "@chakra-ui/react";
 
 const Experience = () => {
   return (
@@ -27,6 +27,17 @@ const Experience = () => {
                     <strong></strong>
                   </span>
                 </p>
+                <Stack direction="row" className="w-100 flex-wrap mt-2">
+                  {item.stack.map((name, key) => (
+                    <Badge
+                      key={key}
+                      variant="subtle"
+                      className="bg-purple text-stone-950"
+                    >
+                      {name}
+                    </Badge>
+                  ))}
+                </Stack>
               </div>
             </div>
           ))}

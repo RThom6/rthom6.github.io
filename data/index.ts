@@ -31,7 +31,7 @@ export const skills = [
     title: "Typescript",
   },
   {
-    title: "Python",
+    title: "Rust",
   },
   {
     title: "AWS",
@@ -52,7 +52,7 @@ export const skills = [
     title: "SQL Server",
   },
   {
-    title: "Spigot/Bukkit",
+    title: "Python",
   },
   {
     title: "MATLAB",
@@ -177,6 +177,6 @@ export const workExperience = [
     location: "Lancaster University",
     description: `Mentored students in Java and C, assisting with debugging and conceptual understanding. Improved my communication skills through actively interacting with the students and working them through whatever issues or questions they had with lab or coursework.`,
     dates: `Oct 2022 - January 2025`,
-    stack: ``,
+    stack: ["Java", "C", "OOP"],
   },
 ];
